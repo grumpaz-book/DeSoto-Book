@@ -56,7 +56,63 @@ pre {
 }
 
 
+
+.console-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+.console-header .console-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ch;
+  width: 100%;
+}
+
+.console-screen {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
 /* === Archive Reveal Target === */
 #main-content {
   display: none;
+}
+
+.menu-options-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.75rem 1ch;
+  align-items: start;
+  justify-content: start;
+}
+
+
+.menu-option {
+  display: inline-block;
+  padding: 0.5rem 1ch;
+  border: 1px solid #00FF00;
+  background-color: rgba(0, 255, 0, 0.05);
+  color: #FFBF00;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.menu-option:hover,
+.menu-option:active {
+  background-color: rgba(255, 191, 0, 0.15);
+  color: #FFFF00;
+  border-color: #FFFF00;
+}
+
+.menu-prompt {
+  font-size: 1rem;
+  color: #00FF00;
+  margin-bottom: 0.25rem;
 }

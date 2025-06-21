@@ -19,13 +19,49 @@
   </div>
 
 
-  <!-- Archive links appear after boot sequence -->
-  <div id="main-content">
-    <pre>
-> <a href="pages/press-release.html">PRESS RELEASE: ZFT CORE MAY ENABLE FTL FLIGHT</a>  
-> <a href="pages/tech-docs.html">TECHNICAL DOCS INDEX</a>  
-> <a href="pages/logs.html">SITE RUNNER LOGS</a>
-    </pre>
+  <!-- Archive screen shown after boot sequence -->
+  <div id="main-content" class="console-screen">
+    <header class="console-header">
+      <hr />
+      <div class="console-title">
+        <span>FLEET OPS CONSOLE   ░ RELAY NODE: HORIZON/14 ░ AUTH: ALPHA-LINKED</span>
+      </div>
+      <hr />
+    </header>
+
+    <section class="console-status">
+      <pre>> SYSTEM STATUS :: NOMINAL</pre>
+      <pre>> TIME SYNC :: +00.000ΔT     |     STANDBY FREQ :: ECHO4</pre>
+      <pre>> ACTIVE MODULE :: ARCHIVE ACCESS MODE</pre>
+    </section>
+
+    <hr class="divider" />
+
+    <section class="console-menu">
+      <div class="menu-prompt">[ SELECT AN OPTION OR ENTER DIGIT (1–5) ]</div>
+
+      <div class="menu-options-grid">
+        <div class="menu-option">[1] ▸ ALERTS</div>
+        <div class="menu-option">[2] ▸ MESSAGES</div>
+        <div class="menu-option">[3] ▸ SYSTEM</div>
+        <div class="menu-option">[4] ▸ NEWS</div>
+        <div class="menu-option">[5] ▸ REPORTS</div>
+        <div class="menu-option">[6] ▸ RESET</div>
+      </div>
+
+ 
+    </section>
+
+    
+
+    <hr class="divider" />
+
+    <section class="console-warning">
+      <pre>⚠️  UNAUTHORIZED ACCESS TO FLEET SYSTEMS IS PROHIBITED.</pre>
+      <pre>⚠️  THIS INTERFACE IS PROTECTED UNDER INTERSTELLAR COMMAND DIRECTIVE 09-ALPHA.</pre>
+      <pre>⚠️  DATA CONTAINED HEREIN IS CLASSIFIED. VIOLATIONS WILL BE LOGGED AND PURSUED.</pre>
+      <hr />
+    </section>
   </div>
 
   <script src="js/boot-loader.js"></script>
