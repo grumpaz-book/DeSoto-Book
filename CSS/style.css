@@ -1,35 +1,52 @@
+/* === Font Embedding === */
+@font-face {
+  font-family: 'Sono';
+  src: url('../fonts/Sono-VariableFont_MONO,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+
 /* === Terminal Aesthetic Base === */
 body {
   background-color: #000;
   color: #00FF00;
-  font-family: "Courier New", Courier, monospace;
+  font-family: 'Sono', 'Courier New', Courier, monospace;
   padding: 2rem;
   margin: 0;
+  text-shadow: 0 0 2px #00FF00; /* Soft green glow for OLED */
 }
+
 
 /* === Anchor Styling === */
 a {
   color: #FFBF00;
   text-decoration: none;
+  text-shadow: 0 0 1px #FFBF00;
 }
 
 a:hover {
   color: #FFFF00;
 }
 
+
 /* === Preformatted Text Blocks === */
 pre {
   white-space: pre-wrap;
-  line-height: 1.5;
-  margin: 0 0 1rem 0;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
 }
+
 
 /* === Blinking Cursor === */
 .cursor {
   display: inline-block;
-  width: 0.15em;
+  width: 0.6ch;
+  height: 1em;
   background-color: #00FF00;
   animation: blink 0.75s step-end infinite;
+  margin-left: 2px;
 }
 
 @keyframes blink {
@@ -38,7 +55,8 @@ pre {
   }
 }
 
-/* === Hidden Archive Until Boot Completes === */
+
+/* === Archive Reveal Target === */
 #main-content {
   display: none;
 }
