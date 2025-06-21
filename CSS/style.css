@@ -1,0 +1,44 @@
+/* === Terminal Aesthetic Base === */
+body {
+  background-color: #000;
+  color: #00FF00;
+  font-family: "Courier New", Courier, monospace;
+  padding: 2rem;
+  margin: 0;
+}
+
+/* === Anchor Styling === */
+a {
+  color: #FFBF00;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFF00;
+}
+
+/* === Preformatted Text Blocks === */
+pre {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+/* === Blinking Cursor === */
+.cursor {
+  display: inline-block;
+  width: 0.15em;
+  background-color: #00FF00;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
+/* === Hidden Archive Until Boot Completes === */
+#main-content {
+  display: none;
+}
