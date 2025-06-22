@@ -6,6 +6,8 @@ const bootLog = document.getElementById("boot-log");
 
 let count = 0;
 
+
+
 /**
  * Adds a dot every 50–150ms to simulate uplink activity.
  * Once 20 dots are displayed, triggers the structured boot loader.

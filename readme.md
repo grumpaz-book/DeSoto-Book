@@ -25,7 +25,8 @@ DeSoto-Book/
 ├── styles/
 │   └── style.css               # Primary stylesheet
 ├── scripts/
-│   └── boot-loader.js          # Startup logic or JS payload
+    ├── main.js
+    └── panel-router.js ← New file
 ├── data/
 │   └── boot-sequence.json      # Startup configuration or command set
 ├── fonts/

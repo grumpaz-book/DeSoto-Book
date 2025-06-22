@@ -5,7 +5,7 @@
   <title>RELAY NODE // ONLINE</title>
 
   <!-- External stylesheet for terminal aesthetic -->
-  <link rel="stylesheet" href="styles/" />
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
@@ -38,7 +38,7 @@
     <hr class="divider" />
 
     <section class="console-menu">
-      <div class="menu-prompt">[ SELECT AN OPTION OR ENTER DIGIT (1–5) ]</div>
+      <div class="menu-prompt">[ SELECT AN OPTION OR ENTER DIGIT (1–5) ] </div>
 
       <div class="menu-options-grid">
         <div class="menu-option">[1] ▸ ALERTS</div>
@@ -48,11 +48,17 @@
         <div class="menu-option">[5] ▸ REPORTS</div>
         <div class="menu-option">[6] ▸ RESET</div>
       </div>
-
- 
     </section>
 
-    
+    <section id="panel-container">
+      <div id="alerts-panel" class="panel hidden">[ ALERTS PANEL ]</div>
+      <div id="messages-panel" class="panel hidden">[ MESSAGES PANEL ]</div>
+      <div id="system-panel" class="panel hidden">[ SYSTEM PANEL ]</div>
+      <div id="news-panel" class="panel hidden">[ NEWS PANEL ]</div>
+      <div id="reports-panel" class="panel hidden">[ REPORTS PANEL ]</div>
+      <div id="reset-panel" class="panel hidden">[ CONSOLE RESET ]</div>
+    </section>
+   
 
     <hr class="divider" />
 
@@ -64,7 +70,8 @@
     </section>
   </div>
 
-  <script src="scripts/"></script>
+  <script src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/main.js"></script>
   
 </body>
 </html>

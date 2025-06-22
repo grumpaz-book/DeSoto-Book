@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+/* === Archive Reveal Target === */
+#main-content {
+  display: none;
+}
+.hidden {
+  display: none;
+}
 
 /* === Terminal Aesthetic Base === */
 body {
@@ -79,10 +86,7 @@ pre {
 }
 
 
-/* === Archive Reveal Target === */
-#main-content {
-  display: none;
-}
+
 
 .menu-options-grid {
   display: grid;
@@ -115,4 +119,16 @@ pre {
   font-size: 1rem;
   color: #00FF00;
   margin-bottom: 0.25rem;
+}
+
+.panel {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #111;
+  border: 1px solid #444;
+  color: #0f0;
+  display: none;
+}
+.panel.visible {
+  display: block;
 }
