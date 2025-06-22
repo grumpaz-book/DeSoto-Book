@@ -13,3 +13,6 @@
 - Visual hierarchy established around ALPHA-LINKED telemetry line
 - Responsive scaling for 10" panel width
 - Version locked for field testing
+
+//branch 'feature/button-interactions'
+-work on landing pages for button presses
